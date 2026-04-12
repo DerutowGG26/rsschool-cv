@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts Catalog</title>
+    <link rel="icon" href="assets/svg/snowflake.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="gifts-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__content">
+                <a href="index.html" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0L14.5 8.5H23.5L16.5 14L19 22.5L12 17.5L5 22.5L7.5 14L0.5 8.5H9.5L12 0Z" fill="#FF4646"/>
+                    </svg>
+                    <span class="logo__text">THE GIFTS</span>
+                </a>
+                
+                <button class="burger" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html#hero" class="nav__link">HOME</a></li>
+                        <li><a href="index.html#about" class="nav__link">ABOUT</a></li>
+                        <li><a href="#" class="nav__link disabled-link">GIFTS</a></li>
+                        <li><a href="#contacts" class="nav__link">CONTACTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <h1 class="h1" style="text-align: center; margin: 4rem 0 2rem;">OUR MAGICAL GIFTS</h1>
+            <div class="tabs">
+                <button class="tab active disabled-tab" data-filter="all">ALL</button>
+                <button class="tab" data-filter="work">FOR WORK</button>
+                <button class="tab" data-filter="health">FOR HEALTH</button>
+                <button class="tab" data-filter="harmony">FOR HARMONY</button>
+            </div>
+            <div class="gifts-grid" id="giftsGrid"></div>
+        </main>
+
+        <footer class="footer container" id="contacts">
+            <div class="footer__contacts">
+                <a href="tel:+375291112233" class="contact-card">
+                    <div class="c-icon">📞</div>
+                    <p class="c-val">+375 (29) 111-22-33</p>
+                </a>
+                <a href="https://maps.google.com" target="_blank" class="contact-card">
+                    <div class="c-icon">📍</div>
+                    <p class="c-val">MAGIC FOREST</p>
+                </a>
+                <a href="mailto:gifts@magic.com" class="contact-card">
+                    <div class="c-icon">📧</div>
+                    <p class="c-val">GIFTS@MAGIC.COM</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">×</button>
+            <div class="modal-body">
+                <div class="modal-img-wrap"><img id="mImg" src="" alt=""></div>
+                <div class="modal-info">
+                    <span id="mTag" class="tag"></span>
+                    <h3 id="mTitle" class="h3-modal"></h3>
+                    <p id="mDesc" class="modal-description"></p>
+                    <div class="superpowers">
+                        <h4 class="superpowers-title">Adds superpowers:</h4>
+                        <div id="mRatings" class="ratings-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
