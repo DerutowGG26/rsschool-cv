@@ -1,1 +1,1 @@
-[# rsschool-cv](https://DerutowGG26.github.io/)
+[# rsschool-cv](https://DerutowGG26.github.io/christmas-shop)
